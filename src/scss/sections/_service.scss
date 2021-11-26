@@ -1,0 +1,64 @@
+// import components scss files
+
+@use "../components/variables" as *;
+@use "../components/breakpoints" as *;
+@use "../components/mixins" as *;
+
+/* ===========================
+     start service section
+   =========================== */
+.service {
+  background-color: var(--footer-clr);
+  padding-top: $sectionPadding;
+  padding-bottom: $sectionPadding;
+  color: #000;
+  text-align: center;
+  .main-heading {
+    color: #000;
+    h2 {
+      margin-top: var(--mb-64);
+    }
+  }
+
+  .article-area {
+    margin: auto;
+  }
+  article {
+    margin-top: 100px;
+    text-align: left;
+    .article-text {
+      padding: 25px;
+      .article-cat,
+      .read-more {
+        color: var(--white-clr);
+        padding: 5px 15px;
+        text-transform: uppercase;
+        width: fit-content;
+        margin-bottom: 25px;
+        font-weight: 600;
+      }
+      .read-more {
+        margin-top: 25px;
+        color: var(--white-clr);
+        background-color: var(--red-clr);
+      }
+    }
+  }
+  article:nth-of-type(1) .article-cat {
+    background-color: var(--yellow-clr);
+  }
+  article:nth-of-type(2) .article-cat {
+    background-color: var(--blue-clr);
+  }
+  article:nth-of-type(3) .article-cat {
+    background-color: var(--green-clr);
+  }
+  article:nth-of-type(2) .article-img {
+    text-align: right;
+  }
+  .article-img {
+    img {
+      width: 40%;
+    }
+  }
+}

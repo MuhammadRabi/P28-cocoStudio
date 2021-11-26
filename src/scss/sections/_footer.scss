@@ -1,0 +1,43 @@
+// import components scss files
+
+@use "../components/variables" as *;
+@use "../components/breakpoints" as *;
+@use "../components/mixins" as *;
+
+/* ===========================
+    start  social section
+   =========================== */
+
+.socials {
+  background-color: var(--socials-clr);
+  color: var(--white-clr);
+  padding: 45px;
+  text-align: center;
+  .container {
+    display: flex;
+    justify-content: center;
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      align-items: space-between;
+      justify-content: center;
+    }
+  }
+
+  i {
+    font-size: 48px;
+    margin-left: 15px;
+    @include media-breakpoint-down(sm) {
+      margin: 10px 0;
+    }
+  }
+}
+
+/* ===========================
+         start  Footer
+   =========================== */
+footer {
+  background-color: var(--footer-clr);
+  padding: 25px;
+  color: var(--white-clr);
+  text-align: center;
+}

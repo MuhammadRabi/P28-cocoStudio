@@ -1,0 +1,78 @@
+// scss-docs-start grid-breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+) !default;
+// scss-docs-end grid-breakpoints
+
+/* ==========
+     Globals 
+   ==========*/
+
+$mainTransition: 0.5s ease-in-out;
+$secondTransition: 0.2s ease-in-out;
+$sectionPadding: 100px;
+$contentMargin: 100px;
+
+// responsive typography
+:root {
+  --biggest-font-size: 24px;
+  --h2-font-size: 20px;
+  --h3-font-size: 18px;
+  --normal-font-size: 15px;
+  --small-font-size: 12px;
+  --smaller-font-size: 14px;
+
+  @media (min-width: 991px) {
+    --biggest-font-size: 36px;
+    --h2-font-size: 28px;
+    --h3-font-size: 20px;
+    --normal-font-size: 18px;
+    --small-font-size: 16px;
+    --smaller-font-size: 14px;
+  }
+
+  --mb-8: 8px;
+  --mb-12: 12px;
+  --mb-16: 16px;
+  --mb-24: 24px;
+  --mb-32: 32px;
+  --mb-64: 64px;
+  --mb-100: 100px;
+  // colors
+  --box-background: #eff6f5;
+  --pink-clr: #f7b4d8;
+  --lavander-clr: #bbacd8;
+  --yellow-clr: #ffce45;
+  --yellow-section-clr: #fae39e;
+  --white-clr: #fff;
+  --red-clr: #f70135;
+  --blue-clr: #098ce5;
+  --green-clr: #08b250;
+  --violet-clr: #9a22cd;
+  --darker-text-color: #d2d6d9;
+  --dark-text-color: #7e7e7e;
+  --darker-background: #f9f9f9;
+  --black-background: #212121;
+  --black-color: #222222;
+  --text-color: #868686;
+  --second-background-color: #eff7fa;
+  --btn-box-shadow: 3px 3px 2px rgb(241, 239, 239);
+  --card-box-shadow: 0px 0px 5px -1px #616161;
+  // social brand colors
+  --facebook-clr: #1877f2;
+  --google-clr: #ea4335;
+  --twitter-clr: #1da1f2;
+  --github-clr: #333;
+  --insta-clr: #c13584;
+  --behance-clr: #1769ff;
+  --dribble-clr: #ea4c89;
+  --linkedin-clr: #0077b5;
+  --pin-clr: #e60023;
+  --socials-clr: #88c1cf;
+  --footer-clr: #b7e3b9;
+}

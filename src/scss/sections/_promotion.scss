@@ -1,0 +1,85 @@
+// import components scss files
+
+@use "../components/variables" as *;
+@use "../components/breakpoints" as *;
+@use "../components/mixins" as *;
+@use "base" as *;
+
+/* ===========================
+     start promotion section
+   =========================== */
+
+.promotion-price {
+  background-color: var(--pink-clr);
+  padding-top: $sectionPadding;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  justify-content: center;
+  gap: 25px;
+  width: 90%;
+  margin: auto;
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+  .card {
+    text-align: center;
+    text-transform: capitalize;
+    max-width: 350px;
+    margin: auto;
+    @include media-breakpoint-down(md) {
+      max-width: 300px;
+    }
+    &:hover .card-top {
+      padding-top: 75px;
+    }
+    .card-top {
+      transform: 0.5s ease-in-out;
+      color: var(--white-clr);
+      padding: 25px 45px;
+
+      .price {
+        font-size: 92px;
+        font-weight: 700;
+        position: relative;
+        &:before {
+          content: "$";
+          position: absolute;
+          font-size: 36px;
+          font-weight: 400;
+          top: 40px;
+          left: 15px;
+        }
+      }
+    }
+  }
+  .card:nth-of-type(1) .card-top,
+  .card:nth-of-type(1) .button {
+    background-color: var(--blue-clr);
+  }
+  .card:nth-of-type(2) .card-top,
+  .card:nth-of-type(2) .button {
+    background-color: var(--red-clr);
+  }
+  .card:nth-of-type(3) .card-top,
+  .card:nth-of-type(3) .button {
+    background-color: var(--green-clr);
+  }
+  .card-bottom {
+    background-color: var(--white-clr);
+    padding: 25px 45px 45px;
+    .feat-list {
+      color: #656666;
+      margin-bottom: 25px;
+      li {
+        padding: 7px;
+      }
+    }
+    a.button {
+      margin: auto;
+      color: var(--white-clr);
+    }
+  }
+}

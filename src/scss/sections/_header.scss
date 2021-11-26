@@ -1,0 +1,24 @@
+// import components scss files
+
+@use "../components/variables" as *;
+@use "../components/breakpoints" as *;
+@use "../components/mixins" as *;
+
+header {
+  position: relative;
+  z-index: 2;
+  height: 0;
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .logo {
+      height: 60px;
+    }
+  }
+  nav {
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+  }
+}

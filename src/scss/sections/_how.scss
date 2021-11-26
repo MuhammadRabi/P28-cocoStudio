@@ -1,0 +1,92 @@
+// import components scss files
+
+@use "../components/variables" as *;
+@use "../components/breakpoints" as *;
+@use "../components/mixins" as *;
+
+/* ===========================
+    start  How section
+   =========================== */
+
+.how {
+  background-color: var(--yellow-section-clr);
+  padding-top: $sectionPadding;
+  padding-bottom: $sectionPadding;
+  .main-heading {
+    color: #000;
+  }
+  article {
+    margin: auto;
+    width: 100%;
+    /*  padding-right: 50px;
+    padding-left: 50px; */
+    .step {
+      @include media-breakpoint-down(md) {
+        flex-direction: column;
+      }
+      h2 {
+        text-align: center;
+        flex: 0 0 25%;
+        span {
+          font-size: 48px;
+          font-weight: 700;
+        }
+      }
+
+      .work-box {
+        width: 150px;
+        height: 150px;
+        display: flex;
+        flex: 0 0 15%;
+        justify-content: center;
+        align-items: center;
+        @include media-breakpoint-down(md) {
+          flex: 0 0 25%;
+        }
+        i {
+          color: var(--white-clr);
+          font-size: 48px;
+        }
+      }
+
+      p {
+        flex: 0 0 25%;
+      }
+    }
+    .step:nth-of-type(1) .work-box {
+      background-color: var(--red-clr);
+      border-bottom: 12px solid #d72a2a;
+    }
+    .step:nth-of-type(1) h2 {
+      color: var(--red-clr);
+    }
+    .step:nth-of-type(2) .work-box {
+      background-color: var(--yellow-clr);
+      border-bottom: 12px solid #a89110;
+    }
+    .step:nth-of-type(2) h2 {
+      color: var(--yellow-clr);
+    }
+    .step:nth-of-type(3) .work-box {
+      background-color: var(--green-clr);
+      border-bottom: 12px solid #0c5a16;
+    }
+    .step:nth-of-type(3) h2 {
+      color: var(--green-clr);
+    }
+    .step:nth-of-type(4) .work-box {
+      background-color: var(--blue-clr);
+      border-bottom: 12px solid #0a42a8;
+    }
+    .step:nth-of-type(4) h2 {
+      color: var(--blue-clr);
+    }
+    .step:nth-of-type(5) .work-box {
+      background-color: var(--violet-clr);
+      border-bottom: 12px solid #7d0cbe;
+    }
+    .step:nth-of-type(5) h2 {
+      color: var(--violet-clr);
+    }
+  }
+}

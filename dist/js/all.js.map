@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.js"],"names":["swiper","Swiper","autoplay","delay"],"mappings":"AAAA,MAAAA,OAAA,IAAAC,OAAA,UAAA,CACAC,SAAA,CACAC,MAAA","file":"all.js","sourcesContent":["const swiper = new Swiper(\".swiper\", {\r\n  autoplay: {\r\n    delay: 1000,\r\n  },\r\n});\r\n"]}

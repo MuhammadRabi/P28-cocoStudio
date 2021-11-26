@@ -1,0 +1,31 @@
+// import components scss files
+
+@use "../components/variables" as *;
+@use "../components/breakpoints" as *;
+@use "../components/mixins" as *;
+
+/* =====================
+     start hero area
+   ===================== */
+
+.hero-area {
+  background-color: var(--socials-clr);
+  height: 100vh;
+  position: relative;
+
+  h1 {
+    position: absolute;
+    color: var(--white-clr);
+    text-transform: uppercase;
+    top: 30%;
+    left: 15%;
+    font-size: 72px;
+    width: 20%;
+  }
+  img {
+    position: absolute;
+    top: 25%;
+    right: 15%;
+    width: 40%;
+  }
+}
