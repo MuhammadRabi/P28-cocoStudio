@@ -19,6 +19,9 @@
       margin-top: var(--mb-64);
     }
   }
+  figure {
+    margin-bottom: 25px;
+  }
 
   .article-area {
     margin: auto;
@@ -57,8 +60,26 @@
     text-align: right;
   }
   .article-img {
-    img {
-      width: 40%;
+    position: relative;
+    img:first-of-type {
+      width: 60%;
+
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
     }
+    img:nth-of-type(2) {
+      position: absolute;
+      width: 30%;
+      top: 55px;
+      left: -75px;
+
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+  }
+  article:nth-of-type(2) .article-img img:nth-of-type(2) {
+    left: 325px;
   }
 }

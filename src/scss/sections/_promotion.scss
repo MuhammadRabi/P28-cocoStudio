@@ -29,11 +29,13 @@
     text-transform: capitalize;
     max-width: 350px;
     margin: auto;
+    transition: 0.25s ease-in-out;
+    margin-top: 75px;
     @include media-breakpoint-down(md) {
       max-width: 300px;
     }
-    &:hover .card-top {
-      padding-top: 75px;
+    &:hover {
+      transform: translateY(-45px);
     }
     .card-top {
       transform: 0.5s ease-in-out;

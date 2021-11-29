@@ -87,7 +87,7 @@
         background-color: var(--red-clr);
         top: -15px;
         left: -5px;
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(xl) {
           display: none;
         }
       }
@@ -101,7 +101,7 @@
           border-left: 15px solid transparent;
           border-bottom: 15px solid transparent;
           border-top: 15px solid transparent;
-          @include media-breakpoint-down(md) {
+          @include media-breakpoint-down(xl) {
             display: none;
           }
         }
@@ -125,7 +125,7 @@
           border-left: 15px solid var(--white-clr);
           border-bottom: 15px solid transparent;
           border-top: 15px solid transparent;
-          @include media-breakpoint-down(md) {
+          @include media-breakpoint-down(xl) {
             display: none;
           }
         }
@@ -134,7 +134,7 @@
     .box {
       background-color: var(--white-clr);
       position: relative;
-      width: 550px;
+      width: 500px;
       margin: 25px auto;
       box-shadow: vaR(--card-box-shadow);
       @include media-breakpoint-down(md) {

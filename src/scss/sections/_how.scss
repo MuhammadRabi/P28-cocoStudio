@@ -18,9 +18,8 @@
   article {
     margin: auto;
     width: 100%;
-    /*  padding-right: 50px;
-    padding-left: 50px; */
     .step {
+      margin-bottom: 25px;
       @include media-breakpoint-down(md) {
         flex-direction: column;
       }
@@ -46,6 +45,10 @@
         i {
           color: var(--white-clr);
           font-size: 48px;
+          @include media-breakpoint-down(md) {
+            font-size: 30px;
+            padding: 20px;
+          }
         }
       }
 

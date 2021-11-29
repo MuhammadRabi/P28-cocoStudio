@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
     <meta charset="UTF-8">
@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>P28</title>
+    <title>P28 - cocoStudio</title>
 </head>
 
 <body>
@@ -34,34 +34,57 @@
     <header>
         <div class="container">
             <a href="#" class="logo">
-                <img src="/dist/assets/img/logo.png" alt="">
+                <img src="dist/assets/img/logo.png" alt="">
             </a>
             <nav>
                 <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="#">hello</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">about</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">service</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">works</a></li>
-                </ul>
-                <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="#">about</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">facts</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">clients</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">word</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">blog</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#hero-area">hello</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#service">service</a></li>
+                    <li class=" nav__item"><a class="nav__link" href="#how">word</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#facts">facts</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#promotion-price">clients</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#blog-posts">blog</a></li>
                 </ul>
             </nav>
+            <!-- side menu-->
+            <aside>
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="#hero-area">hello</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#service">service</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#how">word</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#facts">facts</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#promotion-price">clients</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#blog-posts">blog</a></li>
+                </ul>
+            </aside>
+            <!-- overlay of side menu-->
+            <a class="close-menu" href="#"></a>
+            <!-- menu toggle buttons-->
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
         </div>
     </header>
     <!-- start hero area -->
-    <section class="hero-area">
+    <section class="hero-area" id="hero-area">
         <div class="container">
-            <h1>design. coffe. music. code.</h1>
-            <img src="/dist/assets/img/undraw_video_game_night_8h8m.svg" class="img-fluid" alt="svg">
+            <div class="row align-items-center hero">
+                <div class="col-12 col-lg-6">
+                    <div class="hero-text">
+                        <h1>design. coffe. music. code.</h1>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="hero-img">
+                        <img src="dist/assets/img/undraw_video_game_night_8h8m.svg" class="img-fluid" alt="svg">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- start service section -->
-    <section class="service">
+    <section class="service" id="service">
         <div class="container">
             <div class="main-heading">
                 <p>We are creative people with 5 years experiences in web and mobile app development. Lorem ipsum dolor
@@ -72,9 +95,9 @@
             </div>
             <div class="row justify-content-center">
                 <!-- fig #01 -->
-                <div class="col-6 col-md-2">
+                <div class="col-8 col-sm-6 col-md-2">
                     <figure>
-                        <img src="/dist/assets/img/Layer90.png" class="img-fluid" alt="">
+                        <img src="dist/assets/img/Layer90.png" class="img-fluid" alt="">
                         <figcaption>
                             <h4>many variation</h4>
                             <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui.</p>
@@ -82,9 +105,9 @@
                     </figure>
                 </div>
                 <!-- fig #02 -->
-                <div class="col-6 col-md-2">
+                <div class="col-8 col-sm-6 col-md-2">
                     <figure>
-                        <img src="/dist/assets/img/Layer104.png" class="img-fluid" alt="">
+                        <img src="dist/assets/img/Layer104.png" class="img-fluid" alt="clock-img">
                         <figcaption>
                             <h4>on time</h4>
                             <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui.</p>
@@ -92,9 +115,9 @@
                     </figure>
                 </div>
                 <!-- fig #03 -->
-                <div class="col-6 col-md-2">
+                <div class="col-8 col-sm-6 col-md-2">
                     <figure>
-                        <img src="/dist/assets/img/01.png" class="img-fluid" alt="">
+                        <img src="dist/assets/img/01.png" class="img-fluid" alt="">
                         <figcaption>
                             <h4>unlimited revisions</h4>
                             <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui.</p>
@@ -102,9 +125,9 @@
                     </figure>
                 </div>
                 <!-- fig #04 -->
-                <div class="col-6 col-md-2">
+                <div class="col-8 col-sm-6 col-md-2">
                     <figure>
-                        <img src="/dist/assets/img/Layer105.png" class="img-fluid" alt="">
+                        <img src="dist/assets/img/Layer105.png" class="img-fluid" alt="">
                         <figcaption>
                             <h4>retina ready</h4>
                             <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui.</p>
@@ -112,9 +135,9 @@
                     </figure>
                 </div>
                 <!-- fig #05 -->
-                <div class="col-6 col-md-2">
+                <div class="col-8 col-sm-6 col-md-2">
                     <figure>
-                        <img src="/dist/assets/img/Rectangle3.png" class="img-fluid" alt="">
+                        <img src="dist/assets/img/Rectangle3.png" class="img-fluid" alt="">
                         <figcaption>
                             <h4>full support</h4>
                             <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui.</p>
@@ -132,7 +155,7 @@
             <!-- article #01 -->
             <div class="article-area">
                 <article>
-                    <div class="row justify-content-center align-items-center">
+                    <div class="row justify-content-around align-items-center">
                         <div class="col-12 col-md-5">
                             <div class="article-text">
                                 <div class="article-cat">website development</div>
@@ -154,6 +177,7 @@
                         </div>
                         <div class="col-12 col-md-4">
                             <div class="article-img">
+                                <img src="dist/assets/img/photo.png" alt="">
                                 <img src="dist/assets/img/ICON.png" alt="">
                             </div>
                         </div>
@@ -161,7 +185,7 @@
                 </article>
                 <!-- article #02 -->
                 <article>
-                    <div class="row justify-content-center align-items-center">
+                    <div class="row justify-content-around align-items-center">
                         <div class="col-12 col-md-5 order-2">
                             <div class="article-text order-2">
                                 <div class="article-cat">website design</div>
@@ -183,6 +207,7 @@
                         </div>
                         <div class="col-12 col-md-4 order-1">
                             <div class="article-img">
+                                <img src="dist/assets/img/photo.png" alt="">
                                 <img src="dist/assets/img/ICONs.png" alt="">
                             </div>
                         </div>
@@ -190,7 +215,7 @@
                 </article>
                 <!-- article #03 -->
                 <article>
-                    <div class="row justify-content-center align-items-center">
+                    <div class="row justify-content-around align-items-center">
                         <div class="col-12 col-md-5">
                             <div class="article-text">
                                 <div class="article-cat">graphic design</div>
@@ -212,6 +237,7 @@
                         </div>
                         <div class="col-12 col-md-4">
                             <div class="article-img">
+                                <img src="dist/assets/img/photo.png" alt="">
                                 <img src="dist/assets/img/IOCN.png" alt="">
                             </div>
                         </div>
@@ -221,7 +247,7 @@
         </div>
     </section>
     <!-- start How section -->
-    <section class="how">
+    <section class="how" id="how">
         <div class="container">
             <div class="main-heading">
                 <h2>how we work</h2>
@@ -295,7 +321,7 @@
         </div>
     </section>
     <!-- start facts section -->
-    <section class="facts">
+    <section class="facts" id="facts">
         <div class="container">
             <div class="main-heading">
                 <h2>fantastic facts</h2>
@@ -665,7 +691,7 @@
         </div>
     </section>
     <!-- start promotion price -->
-    <section class="promotion-price">
+    <section class="promotion-price" id="promotion-price">
         <div class="container">
             <div class="main-heading">
                 <h2>promotion price</h2>
@@ -752,7 +778,7 @@
         </div>
     </section>
     <!-- start blog-posts -->
-    <section class="blog-posts">
+    <section class="blog-posts" id="blog-posts">
         <div class="container">
             <div class="main-heading">
                 <h2>blog posts</h2>
@@ -844,7 +870,7 @@
                 </div>
             </div>
             <div class="section">
-                <i class="fas fa-redo-alt"></i> <input type="text" name=""
+                <i class="fas fa-redo-alt"></i> <input type="text" name="email"
                     placeholder="enter your email to subscrible newsletter" class="subscribe">
                 <div class="load">load more blog posts </div>
             </div>
@@ -864,12 +890,10 @@
             </div>
         </div>
     </section>
-    <section>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3409.906523141119!2d30.007878343115234!3d31.278680773336053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1637438374807!5m2!1sen!2seg"
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </section>
-    <section class="socials">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3409.906523141119!2d30.007878343115234!3d31.278680773336053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1637438374807!5m2!1sen!2seg"
+        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <div class="socials">
         <div class="container">
             <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i>
             </a>
@@ -882,7 +906,12 @@
             <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin-in"></i>
             </a>
         </div>
-    </section>
+    </div>
+    <!-- scroll to top button -->
+    <div class="scroll-to-top">
+        <i class="fas fa-angle-up"></i>
+        <i class="fas fa-angle-up"></i>
+    </div>
     <!-- start footer -->
     <footer>
         <div class="container">
