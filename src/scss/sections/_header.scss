@@ -15,13 +15,12 @@ header {
     justify-content: space-around;
     align-items: center;
     .logo {
-      height: 60px;
+      height: 80px;
+      display: flex;
     }
     nav {
       @include media-breakpoint-down(lg) {
-        position: fixed;
-        top: 0;
-        right: -100%;
+        display: none;
       }
     }
 

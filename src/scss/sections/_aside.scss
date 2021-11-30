@@ -16,6 +16,9 @@ aside {
   height: 100%;
   background-color: var(--socials-clr);
   z-index: 1001;
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
   .nav__list {
     display: flex;
     flex-direction: column;
@@ -39,7 +42,7 @@ aside {
   }
 }
 // overlay-layer when open side menu
-.close-menu {
+.sidebar-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -54,12 +57,12 @@ aside {
   }
 }
 
-// menu toggle buttons
-.menu-toggle {
+// sidebar toggle buttons
+.sidebar-toggle {
   display: block;
   position: fixed;
   top: 25px;
-  right: 25px;
+  right: 65px;
   cursor: pointer;
   font-size: 34px;
   color: var(--white-clr);
@@ -67,6 +70,10 @@ aside {
 
   i:nth-child(1) {
     display: block;
+    transition: 0.5s;
+    &:hover {
+      transform: scale(0.75);
+    }
   }
   i:nth-child(2) {
     display: none;
@@ -76,5 +83,9 @@ aside {
   }
   &.active i:nth-child(2) {
     display: block;
+    transition: 0.5s;
+    &:hover {
+      transform: scale(0.75);
+    }
   }
 }

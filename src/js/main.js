@@ -4,16 +4,29 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-// menu toggle logic
-
+// opening and closing sidebar from sidebar toggle buttons
 const sideBar = document.querySelector("aside");
-const menuToggle = document.querySelector(".menu-toggle");
-const closeMenu = document.querySelector(".close-menu");
+const sidebarToggle = document.querySelector(".sidebar-toggle");
+const sidebarOverlay = document.querySelector(".sidebar-overlay");
+const sideNavLinks = document.querySelectorAll("aside .nav__link");
 
-menuToggle.addEventListener("click", () => {
-  sideBar.classList.toggle("active");
-  menuToggle.classList.toggle("active");
-  closeMenu.classList.toggle("active");
+function closeSideMenu(navlinksOrsidebarToggle) {
+  navlinksOrsidebarToggle.addEventListener("click", () => {
+    sideBar.classList.toggle("active");
+    sidebarToggle.classList.toggle("active");
+    sidebarOverlay.classList.toggle("active");
+  });
+}
+
+sidebarToggle.addEventListener("click", closeSideMenu);
+
+closeSideMenu(sidebarToggle);
+
+// closing sidebar upon clicking the side navlinks
+sideNavLinks.forEach((link) => {
+  link.addEventListener("click", closeSideMenu);
+
+  closeSideMenu(link);
 });
 
 // scroll to top functionality
@@ -36,7 +49,7 @@ window.addEventListener("scroll", () => {
   scrolltoTop(scrollTop);
 });
 
-// scrollspy
+// scrollspy functionality
 
 let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll(".nav__link");

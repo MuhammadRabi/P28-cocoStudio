@@ -28,9 +28,11 @@
       border: 5px solid #fff;
       font-weight: 600;
       text-align: center;
+      margin-top: 10px;
     }
     .subscribe {
       background-color: var(--pink-clr);
+      color: var(--white-clr);
       &::placeholder {
         color: #fff;
       }
@@ -39,6 +41,11 @@
       background-color: #fff;
       color: var(--pink-clr);
       position: relative;
+      cursor: pointer;
+      transition: 0.5s;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
     i {
       display: block;

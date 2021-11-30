@@ -27,7 +27,7 @@
     margin: auto;
   }
   article {
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: left;
     .article-text {
       padding: 25px;
@@ -61,22 +61,17 @@
   }
   .article-img {
     position: relative;
+    @include media-breakpoint-down(xl) {
+      display: none;
+    }
     img:first-of-type {
       width: 60%;
-
-      @include media-breakpoint-down(md) {
-        display: none;
-      }
     }
     img:nth-of-type(2) {
       position: absolute;
       width: 30%;
       top: 55px;
       left: -75px;
-
-      @include media-breakpoint-down(md) {
-        display: none;
-      }
     }
   }
   article:nth-of-type(2) .article-img img:nth-of-type(2) {
